@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="615.0" prefWidth="823.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.eightgame.Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d7e3ee" height="390.0" layoutX="204.0" layoutY="132.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="10.0" width="390.0" />
+      <Line endX="289.0" endY="22.0" layoutX="305.0" layoutY="240.0" startX="-101.0" startY="22.0" />
+      <Line endX="168.0" endY="-118.0" layoutX="298.0" layoutY="250.0" startX="168.0" startY="272.0" />
+      <Line endX="30.0" endY="12.0" layoutX="307.0" layoutY="509.0" startX="30.0" startY="-377.0" />
+      <Line endX="279.0" endY="115.0" layoutX="315.0" layoutY="275.0" startX="-111.0" startY="115.0" />
+      <Label fx:id="oneLabel" layoutX="267.0" layoutY="178.0" text="1">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="twoLabel" layoutX="393.0" layoutY="180.0" text="2">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="threeLabel" layoutX="518.0" layoutY="180.0" text="3">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="fourLabel" layoutX="269.0" layoutY="300.0" text="4">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="fiveLabel" layoutX="393.0" layoutY="305.0" text="5">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="sixLabel" layoutX="518.0" layoutY="303.0" text="6">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="sevenLabel" layoutX="269.0" layoutY="429.0" text="7">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="eightLabel" layoutX="393.0" layoutY="429.0" text="8">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="nineLabel" layoutX="518.0" layoutY="428.0" text=" ">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="oneRectangle" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="120.0" layoutX="214.0" layoutY="140.0" onMouseClicked="#oneRectangleClicked" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="125.0" />
+      <Rectangle fx:id="twoRectangle" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="120.0" layoutX="339.0" layoutY="141.0" onMouseClicked="#twoRectangleClicked" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="125.0" />
+      <Rectangle fx:id="threeRectangle" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="120.0" layoutX="468.0" layoutY="143.0" onMouseClicked="#threeRectangleClicked" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="116.0" />
+      <Rectangle fx:id="fourRectangle" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="126.0" layoutX="214.0" layoutY="263.0" onMouseClicked="#fourRectangleClicked" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="125.0" />
+      <Rectangle fx:id="fiveRectangle" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="126.0" layoutX="339.0" layoutY="263.0" onMouseClicked="#fiveRectangleClicked" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="125.0" />
+      <Rectangle fx:id="sixRectangle" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="129.0" layoutX="468.0" layoutY="260.0" onMouseClicked="#sixRectangleClicked" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="118.0" />
+      <Rectangle fx:id="sevenRectangle" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="120.0" layoutX="215.0" layoutY="391.0" onMouseClicked="#sevenRectangleClicked" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="125.0" />
+      <Rectangle fx:id="eightRectangle" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="120.0" layoutX="335.0" layoutY="392.0" onMouseClicked="#eightRectangleClicked" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="131.0" />
+      <Rectangle fx:id="nineRectangle" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="121.0" layoutX="466.0" layoutY="391.0" onMouseClicked="#nineRectangleClicked" stroke="BLACK" strokeType="INSIDE" width="119.0" />
+      <Button fx:id="mixButton" layoutX="288.0" layoutY="559.0" mnemonicParsing="false" onMouseClicked="#mixButtonClicked" prefHeight="25.0" prefWidth="74.0" text="Mix" />
+   </children>
+</AnchorPane>
