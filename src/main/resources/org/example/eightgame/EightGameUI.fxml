@@ -69,5 +69,20 @@
       <Rectangle fx:id="eightRectangle" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="120.0" layoutX="335.0" layoutY="392.0" onMouseClicked="#eightRectangleClicked" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="131.0" />
       <Rectangle fx:id="nineRectangle" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="121.0" layoutX="466.0" layoutY="391.0" onMouseClicked="#nineRectangleClicked" stroke="BLACK" strokeType="INSIDE" width="119.0" />
       <Button fx:id="mixButton" layoutX="288.0" layoutY="559.0" mnemonicParsing="false" onMouseClicked="#mixButtonClicked" prefHeight="25.0" prefWidth="74.0" text="Mix" />
+      <Label layoutX="402.0" layoutY="557.0" prefHeight="30.0" prefWidth="110.0" text="Click count:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="clickCountLabel" layoutX="536.0" layoutY="557.0" text="0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="gameWinLabel" layoutX="144.0" layoutY="58.0">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

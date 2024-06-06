@@ -4,21 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b4082b5-b906-4244-8be7-fe7c87463c39" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/eightgame/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/eightgame/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/eightgame/Helper.java" afterDir="false" />
+    <list default="true" id="5b4082b5-b906-4244-8be7-fe7c87463c39" name="Changes" comment="A working version of 8-game that allows you to mix the numbers. It's very simplified so I'll have to make some modifications more.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/eightgame/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/eightgame/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/eightgame/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/eightgame/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/eightgame/EightGameUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/eightgame/EightGameUI.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +24,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -86,11 +82,24 @@
       <option name="presentableId" value="Default" />
       <updated>1716881791649</updated>
       <workItem from="1716881792799" duration="3224000" />
-      <workItem from="1717044247424" duration="11390000" />
+      <workItem from="1717044247424" duration="11849000" />
+      <workItem from="1717495390204" duration="4936000" />
     </task>
+    <task id="LOCAL−00001" summary="A working version of 8-game that allows you to mix the numbers. It's very simplified so I'll have to make some modifications more.">
+      <option name="closed" value="true" />
+      <created>1717061021453</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1717061021453</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="A working version of 8-game that allows you to mix the numbers. It's very simplified so I'll have to make some modifications more." />
+    <option name="LAST_COMMIT_MESSAGE" value="A working version of 8-game that allows you to mix the numbers. It's very simplified so I'll have to make some modifications more." />
   </component>
 </project>

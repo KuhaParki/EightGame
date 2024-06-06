@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="543.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.eightgame.Controller">
+   <children>
+      <Rectangle fx:id="topLeft" arcHeight="5.0" arcWidth="5.0" fill="#90b5d6" height="97.0" layoutX="254.0" layoutY="142.0" onMouseClicked="#topLeftClicked" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="101.0" />
+      <Rectangle fx:id="downRight" arcHeight="5.0" arcWidth="5.0" fill="#90b5d7" height="97.0" layoutX="456.0" layoutY="336.0" onMouseClicked="#downRightClicked" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="101.0" />
+      <Rectangle fx:id="downCenter" arcHeight="5.0" arcWidth="5.0" fill="#90b5d7" height="97.0" layoutX="355.0" layoutY="336.0" onMouseClicked="#downCenterClicked" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="101.0" />
+      <Rectangle fx:id="downLeft" arcHeight="5.0" arcWidth="5.0" fill="#90b5d7" height="97.0" layoutX="254.0" layoutY="336.0" onMouseClicked="#downLeftClicked" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="101.0" />
+      <Rectangle fx:id="middleLeft" arcHeight="5.0" arcWidth="5.0" fill="#90b5d7" height="97.0" layoutX="254.0" layoutY="239.0" onMouseClicked="#middleLeftClicked" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="101.0" />
+      <Rectangle fx:id="middleCenter" arcHeight="5.0" arcWidth="5.0" fill="#90b5d7" height="97.0" layoutX="355.0" layoutY="239.0" onMouseClicked="#middleCenterClicked" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="101.0" />
+      <Rectangle fx:id="middleRight" arcHeight="5.0" arcWidth="5.0" fill="#90b5d7" height="97.0" layoutX="456.0" layoutY="239.0" onMouseClicked="#middleRightClicked" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="101.0" />
+      <Rectangle fx:id="topRight" arcHeight="5.0" arcWidth="5.0" fill="#90b5d7" height="97.0" layoutX="456.0" layoutY="142.0" onMouseClicked="#topRightClicked" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="101.0" />
+      <Rectangle fx:id="topCenter" arcHeight="5.0" arcWidth="5.0" fill="#90b5d7" height="97.0" layoutX="355.0" layoutY="142.0" onMouseClicked="#topCenterClicked" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="101.0" />
+      <Label fx:id="eightLabel" layoutX="397.0" layoutY="362.0" prefHeight="0.0" prefWidth="0.0" text="8">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="sevenLabel" layoutX="296.0" layoutY="362.0" prefHeight="0.0" prefWidth="5.0" text="7">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="sixLabel" layoutX="498.0" layoutY="265.0" prefHeight="16.0" prefWidth="1.0" text="6">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="fiveLabel" layoutX="397.0" layoutY="265.0" prefHeight="0.0" prefWidth="0.0" text="5">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="fourLabel" layoutX="296.0" layoutY="265.0" prefHeight="9.0" prefWidth="0.0" text="4">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="threeLabel" layoutX="498.0" layoutY="168.0" prefHeight="8.0" prefWidth="4.0" text="3">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="twoLabel" layoutX="397.0" layoutY="168.0" prefHeight="23.0" prefWidth="0.0" text="2">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="oneLabel" layoutX="296.0" layoutY="168.0" prefHeight="26.0" prefWidth="0.0" text="1">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="498.0" layoutY="362.0" prefHeight="0.0" prefWidth="0.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -10,10 +10,22 @@ import java.io.IOException;
 
 public class App extends Application {
 
+    /**
+     * The main method
+     * @param args
+     */
     public static void main(String[] args) {
         launch(args);
     }
 
+    /**
+     * A method to start the appplication
+     * @param primaryStage the primary stage for this application, onto which
+     * the application scene can be set.
+     * Applications may create other stages, if needed, but they will not be
+     * primary stages.
+     * @throws IOException Thrown if something goes wrong with the input or output.
+     */
     @Override
     public void start(Stage primaryStage) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("EightGameUI.fxml"));
