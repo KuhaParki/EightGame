@@ -345,39 +345,59 @@ public class Controller {
         Random random = new Random();
 
         // Create a new Array, set index to be 0 and create a boolean variable
-        int[] numArray = new int[8];
-        int idx = 0;
-        boolean added;
+        boolean solvable = false;
 
-        // Loop the Label Array
-        for(Label x : labelArray2){
+        while (!solvable) {
 
-            // Set added to be false on every iteration
-            added = false;
+            int[] numArray = new int[8];
+            int idx = 0;
+            boolean added;
 
-            // Loop until added is declared true
-            while(!added) {
 
-                // Create a new random integer on every loop and set a boolean variable test to be false
-                int random_int = random.nextInt(1, 9);
-                boolean test = false;
+            // Loop the Label Array
+            for(Label x : labelArray2){
 
-                // Check if the Array already consists the new random integer
-                for (int i = 0; i < idx; i++) {
-                    if (numArray[i] == random_int) {
-                        test = true;
-                        break;
+                // Set added to be false on every iteration
+                added = false;
+
+                // Loop until added is declared true
+                while(!added) {
+
+                    // Create a new random integer on every loop and set a boolean variable test to be false
+                    int random_int = random.nextInt(1, 9);
+                    boolean test = false;
+
+                    // Check if the Array already consists the new random integer
+                    for (int i = 0; i < idx; i++) {
+                        if (numArray[i] == random_int) {
+                            test = true;
+                            break;
+                        }
+                    }
+
+                    // If it doesn't consist the integer then it's added to the Array and the while loop eventually breaks
+                    // to fill the next available spot of the Array.
+                    if(!test){
+                        numArray[idx] = random_int;
+                        idx++;
+                        x.setText(String.valueOf(random_int));
+                        added = true;
                     }
                 }
+            }
 
-                // If it doesn't consist the integer then it's added to the Array and the while loop eventually breaks
-                // to fill the next available spot of the Array.
-                if(!test){
-                    numArray[idx] = random_int;
-                    idx++;
-                    x.setText(String.valueOf(random_int));
-                    added = true;
+            int inversions = 0;
+
+            for (int i = 0; i < numArray.length - 1; i++) {
+                for (int j = i + 1; j < numArray.length; j++) {
+                    if (numArray[i] > numArray[j]) {
+                        inversions++;
+                    }
                 }
+            }
+
+            if (inversions % 2 == 0){
+                solvable = true;
             }
         }
     }

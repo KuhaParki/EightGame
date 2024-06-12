@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b4082b5-b906-4244-8be7-fe7c87463c39" name="Changes" comment="A working version of 8-game that allows you to mix the numbers. It's very simplified so I'll have to make some modifications more.">
+    <list default="true" id="5b4082b5-b906-4244-8be7-fe7c87463c39" name="Changes" comment="A version where you can mix the numbers and if you win the game, the game announces it. Also has a click counter.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/eightgame/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/eightgame/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/eightgame/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/eightgame/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/eightgame/EightGameUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/eightgame/EightGameUI.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +82,8 @@
       <updated>1716881791649</updated>
       <workItem from="1716881792799" duration="3224000" />
       <workItem from="1717044247424" duration="11849000" />
-      <workItem from="1717495390204" duration="4936000" />
+      <workItem from="1717495390204" duration="9078000" />
+      <workItem from="1718173967908" duration="3141000" />
     </task>
     <task id="LOCAL−00001" summary="A working version of 8-game that allows you to mix the numbers. It's very simplified so I'll have to make some modifications more.">
       <option name="closed" value="true" />
@@ -92,7 +92,14 @@
       <option name="presentableId" value="LOCAL−00001" />
       <updated>1717061021453</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL−00002" summary="A version where you can mix the numbers and if you win the game, the game announces it. Also has a click counter.">
+      <option name="closed" value="true" />
+      <created>1717649361695</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1717649361695</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,6 +107,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="A working version of 8-game that allows you to mix the numbers. It's very simplified so I'll have to make some modifications more." />
-    <option name="LAST_COMMIT_MESSAGE" value="A working version of 8-game that allows you to mix the numbers. It's very simplified so I'll have to make some modifications more." />
+    <MESSAGE value="A version where you can mix the numbers and if you win the game, the game announces it. Also has a click counter." />
+    <option name="LAST_COMMIT_MESSAGE" value="A version where you can mix the numbers and if you win the game, the game announces it. Also has a click counter." />
   </component>
 </project>
