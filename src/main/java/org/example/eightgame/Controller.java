@@ -37,7 +37,7 @@ public class Controller {
     Label[] labelArray = {oneLabel, twoLabel, threeLabel, fourLabel, fiveLabel, sixLabel, sevenLabel,
             eightLabel};
     Rectangle[] rectArray = {oneRectangle, twoRectangle, threeRectangle, fourRectangle, fiveRectangle, sixRectangle,
-                sevenRectangle, eightRectangle};
+            sevenRectangle, eightRectangle};
 
     /**
      * This is a method that displays a text when all the numbers are in order and the user has won the game.
@@ -331,74 +331,79 @@ public class Controller {
      * @param mouseEvent ja click of the "mix" button.
      */
     public void mixButtonClicked(MouseEvent mouseEvent) {
-        // Set the click count Label to be 0
-        clickCountLabel.setText("0");
+        try {
+            // Set the click count Label to be 0
+            clickCountLabel.setText("0");
 
-        // Call for the mixHelper method
-        mixHelper();
+            // Call for the mixHelper method
+            mixHelper();
 
-        // Create a new Array for the Labels
-        Label[] labelArray2 = {oneLabel, twoLabel, threeLabel, fourLabel, fiveLabel, sixLabel, sevenLabel,
-                eightLabel};
+            // Create a new Array for the Labels
+            Label[] labelArray2 = {oneLabel, twoLabel, threeLabel, fourLabel, fiveLabel, sixLabel, sevenLabel,
+                    eightLabel};
 
-        // Construct a Random-object
-        Random random = new Random();
+            // Construct a Random-object
+            Random random = new Random();
 
-        // Create a new Array, set index to be 0 and create a boolean variable
-        boolean solvable = false;
+            // Create a new Array, set index to be 0 and create a boolean variable
+            boolean solvable = false;
 
-        while (!solvable) {
+            while (!solvable) {
 
-            int[] numArray = new int[8];
-            int idx = 0;
-            boolean added;
+                int[] numArray = new int[8];
+                int idx = 0;
+                boolean added;
 
 
-            // Loop the Label Array
-            for(Label x : labelArray2){
+                // Loop the Label Array
+                for (Label x : labelArray2) {
 
-                // Set added to be false on every iteration
-                added = false;
+                    // Set added to be false on every iteration
+                    added = false;
 
-                // Loop until added is declared true
-                while(!added) {
+                    // Loop until added is declared true
+                    while (!added) {
 
-                    // Create a new random integer on every loop and set a boolean variable test to be false
-                    int random_int = random.nextInt(1, 9);
-                    boolean test = false;
+                        // Create a new random integer on every loop and set a boolean variable test to be false
+                        int random_int = random.nextInt(1, 9);
+                        boolean test = false;
 
-                    // Check if the Array already consists the new random integer
-                    for (int i = 0; i < idx; i++) {
-                        if (numArray[i] == random_int) {
-                            test = true;
-                            break;
+                        // Check if the Array already consists the new random integer
+                        for (int i = 0; i < idx; i++) {
+                            if (numArray[i] == random_int) {
+                                test = true;
+                                break;
+                            }
+                        }
+
+                        // If it doesn't consist the integer then it's added to the Array and the while loop eventually breaks
+                        // to fill the next available spot of the Array.
+                        if (!test) {
+                            numArray[idx] = random_int;
+                            idx++;
+                            x.setText(String.valueOf(random_int));
+                            added = true;
                         }
                     }
+                }
 
-                    // If it doesn't consist the integer then it's added to the Array and the while loop eventually breaks
-                    // to fill the next available spot of the Array.
-                    if(!test){
-                        numArray[idx] = random_int;
-                        idx++;
-                        x.setText(String.valueOf(random_int));
-                        added = true;
+                int inversions = 0;
+
+                for (int i = 0; i < numArray.length - 1; i++) {
+                    for (int j = i + 1; j < numArray.length; j++) {
+                        if (numArray[i] > numArray[j]) {
+                            inversions++;
+                        }
                     }
                 }
-            }
 
-            int inversions = 0;
-
-            for (int i = 0; i < numArray.length - 1; i++) {
-                for (int j = i + 1; j < numArray.length; j++) {
-                    if (numArray[i] > numArray[j]) {
-                        inversions++;
-                    }
+                if (inversions % 2 == 0) {
+                    solvable = true;
                 }
             }
-
-            if (inversions % 2 == 0){
-                solvable = true;
-            }
+        }
+        catch (Exception e){
+            System.out.println("Error mixing the board: " + e.getMessage());
         }
     }
 
@@ -426,4 +431,3 @@ public class Controller {
         nineRectangle.setOpacity(1);
     }
 }
-
